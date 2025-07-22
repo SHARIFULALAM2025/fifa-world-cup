@@ -123,16 +123,35 @@
 }
 .Transfer{
     display: flex;
-    
+    gap: 20px;
    
 }
 .card{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 56px;
+    gap: 30px;
     
 }
 .card, .picture{
     height: 180px;
     width: 100%;
+}
+.Watch{
+    width: 100px;
+    height: 32px;
+    border: 1px solid #161616;
+    border-radius: 5px;
+}
+.Live{
+    padding: 20px;
+}
+.talks{
+    font-size: 1.125rem;
+    color: #161616;
+    font-weight: 500;
+    margin-top: 12px;
+
+}
+.card, img{
+    border-radius: 10px;
 }
