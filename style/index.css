@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.poppins_font{
+  font-family: "Poppins";
+  font-style: normal;
+}
+*{
+    /* pading , margin বক্সের ভিতরে কাজ করবে বাহিরে না এজন্য এটি ইউজ করা হয় */
+    box-sizing: border-box;
+    /* মার্জিন জিরো pading zero  ইউজ করার মূল কারণটা হল ব্রাউজারে বাই ডিফল্টভাবে কিছু ট্যাগের মার্জিন এবং প্যাডিং নিয়ে থাকে সেটা দূর করার জন্য  margin 0 , padding 0 use kora hoye */
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161616;
+    gap: 5.063rem;
+    border-radius: 15px;
+    
+}
+.banner_img, img{
+    display: block;
+}
+.banner, .banner_text{
+    font-size: 4.375rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.banner, .banner_dest{
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+.text_btn{
+    padding: 16px 25px;
+    background-color: #DD0000;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 1.875rem;
+    border-radius: .313rem;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+.banner, .Greatest{
+    padding-left: 7.813rem;
+    padding-bottom: 6.983rem;
+    padding-top: 5rem;
+}
+@media screen and (max-width:576px) {
+    .banner{
+        flex-direction: column;
+        
+    }
+    .banner, .banner_img, img{
+        width: 100%;
+        display: block;
+    }
+    .banner, .Greatest{
+        padding: 0;
+    }
+    .banner, .banner_text{
+    font-size: 2.375rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    }
+    .Greatest{
+        padding: 4px;
+    }
+    .text_btn:hover{
+        background-color: green;
+    }
+}
+
+/* upcoming section */
+.btn{
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    width: 25%;
+    height: fit-content;
+}
+.upcoming_1{
+    width:252px;
+    height: 64px;
+    background-color: #FFFFFF;
+    color: #161616;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+}
+.upcoming_2{
+    width:252px;
+    height: 64px;
+    background-color: #FFFFFF;
+    color: #161616;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.upcoming_3{
+    width:252px;
+    height: 64px;
+    background-color: #DD0000;
+    color: #FFFFFF;
+    margin-top: 30px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+}
+.upcoming_section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+}
+.Transfer{
+    display: flex;
+    
+   
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 56px;
+    
+}
+.card, .picture{
+    height: 180px;
+    width: 100%;
+}
