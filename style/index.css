@@ -217,3 +217,23 @@
     }
 
 }
+/* banner section responsive for mobile device */
+@media (max-width:576px) {
+     .upcoming_section{
+        flex-direction: column;
+    }
+    .btn{
+        width: 100%;
+        flex-direction: column;
+        gap: 5px;
+        background-color: white;
+       align-items: center;
+    }
+    .upcoming_1, .upcoming_2{
+        border: 2px solid #E8E8E8;
+    }
+    .card{
+        grid-template-columns: repeat(1 ,1fr);
+        padding: 5px;
+    }
+}
