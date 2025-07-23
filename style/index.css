@@ -17,6 +17,9 @@
 .Greatest{
     padding-left: 50px;
 }
+img{
+    max-width: 100%;
+}
 .banner{
     display: flex;
     justify-content: space-between;
@@ -27,6 +30,7 @@
    
     animation: banner_animation .6s ease-in-out ;
 }
+
 #player{
     display: block;
     animation: banner_player 2s ease-in-out infinite;
@@ -51,35 +55,7 @@
     gap: 6px;
     align-items: center;
 }
-@keyframes banner_animation {
-    0%{
-        opacity: 0;
-        transform: translateX(-20px);
 
-    }
-    50%{
-        opacity: 0.5;
-        transform: translateX(-10px);
-
-    }
-    100%{
-        opacity: 1;
-        transform: translateX(-10px);
-
-    }
-}
-@keyframes banner_player {
-    0%{
-        opacity: 0.5;
-    }
-    50%{
-        opacity: .7;
-
-    }
-    100%{
-        opacity: 1;
-    }
-}
 
 /* upcoming section */
 .btn{
@@ -123,17 +99,21 @@
     border: none;
     border-radius: 10px;
 }
+.Transfer{
+    display: flex;
+    gap: 26px;
+}
 .upcoming_section{
     margin-top: 100px;
     display: flex;
     justify-content: space-between;
     gap: 56px;
 }
-.Transfer{
+/* .Transfer{
     display: flex;
     gap: 20px;
    
-}
+} */
 .card{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -141,10 +121,7 @@
     
     
 }
-.card, .picture{
-    height: 180px;
-    width: 100%;
-}
+
 .Watch{
     width: 100px;
     height: 32px;
@@ -269,4 +246,76 @@
         grid-template-columns: repeat(1 ,1fr);
         padding: 5px;
     }
+}
+@keyframes banner_animation {
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+        
+
+    }
+    5%{
+        color:red;
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateX(-10px);
+        color: green;
+       
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-10px);
+        color: orange;
+
+    }
+}
+@keyframes banner_player {
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: .7;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+footer{
+    width: 100%;
+    height: auto;
+   background-color: #161616;
+   text-align: center;
+}
+.footer-text, ul{
+   
+    list-style: none;
+    
+
+}
+line, hr{
+    max-width: 1320px;
+}
+.line{
+    display: flex;
+    padding-left: 140px;
+    padding-top: 50px;
+    flex-direction: column;
+}
+.footer-text, a{
+    text-decoration: none;
+    margin: 10px;
+    color: #E8E8E8;
+}
+
+.footer-text{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+footer, h1{
+    color: white;
+    padding-top: 20px;
 }
