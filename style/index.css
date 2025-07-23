@@ -14,6 +14,9 @@
     max-width: 1440px;
     margin: 0 auto;
 }
+.Greatest{
+    padding-left: 50px;
+}
 .banner{
     display: flex;
     justify-content: space-between;
@@ -22,10 +25,11 @@
     gap: 5.063rem;
     border-radius: 15px;
    
-    
+    animation: banner_animation .6s ease-in-out ;
 }
 #player{
     display: block;
+    animation: banner_player 2s ease-in-out infinite;
 }
 .banner, .banner_text{
     font-size: 4.375rem;
@@ -47,7 +51,35 @@
     gap: 6px;
     align-items: center;
 }
+@keyframes banner_animation {
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
 
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateX(-10px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(-10px);
+
+    }
+}
+@keyframes banner_player {
+    0%{
+        opacity: 0.5;
+    }
+    50%{
+        opacity: .7;
+
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 /* upcoming section */
 .btn{
@@ -106,6 +138,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
+    
     
 }
 .card, .picture{
