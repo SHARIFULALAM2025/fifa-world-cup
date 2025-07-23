@@ -67,6 +67,8 @@
     text-align: center;
     border: none;
     border-radius: 10px;
+    margin-top: 30px;
+   
 }
 .upcoming_2{
     width:252px;
@@ -77,6 +79,7 @@
     border: none;
     border-radius: 10px;
     margin-top: 30px;
+   
 }
 .upcoming_3{
     width:252px;
@@ -192,4 +195,25 @@
         color: red;
 
     }
+}
+/* laptop device responsive up-coming  section */
+
+@media (max-width:992px) {
+    .upcoming_section{
+        flex-direction: column;
+    }
+    .btn{
+        width: 100%;
+        flex-direction: row;
+        gap: 5px;
+        background-color: white;
+       
+    }
+    .upcoming_1, .upcoming_2{
+        border: 2px solid #E8E8E8;
+    }
+    .card{
+        grid-template-columns: repeat(2 , 1fr);
+    }
+
 }
